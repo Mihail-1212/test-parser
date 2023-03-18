@@ -1,7 +1,5 @@
 <?php namespace Mamok\TestParser;
 
-use DivineOmega\CliProgressBar\ProgressBar;
-
 
 use \ProgressBar\Manager as ProgressBarManager;
 
@@ -43,15 +41,11 @@ class ConsoleController
 	 */
 
 	public function initProgressBar($maxProgress) {
-		// $this->progressBar = new ProgressBar();
 		$this->progressBar = new ProgressBarManager(0, $maxProgress);
-
-		// $this->progressBar->setMaxProgress($maxProgress);
 	}
 
 
 	public function progressBarTick() {
-		// $this->progressBar->advance()->display();
 		$this->progressBar->advance();
 	}
 
