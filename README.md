@@ -10,3 +10,10 @@ requirements:
 ```
 php index.php
 ```
+
+#### Database config
+
+./src/Config.php
+
+Change 'dbConfig'
+
